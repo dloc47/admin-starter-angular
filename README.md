@@ -1,10 +1,14 @@
 # 🚀 Admin Starter Angular
 
-A modern, responsive admin dashboard template built with Angular 19 and Tailwind CSS.
+A modern, production-ready Angular admin panel boilerplate that you can use as a starting point for your projects. This template provides a solid foundation with all the essential features needed for building admin dashboards.
 
 ![Angular](https://img.shields.io/badge/Angular-19.1.0-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.2-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.7.2-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+
+## 🎯 Purpose
+
+This project is designed to be a starting point for developers who want to build admin panels with Angular. It's open-source and free to use, providing a solid foundation with modern features and best practices. Whether you're building a small admin dashboard or a large enterprise application, this boilerplate will help you get started quickly.
 
 ## 📋 Features
 
@@ -15,6 +19,9 @@ A modern, responsive admin dashboard template built with Angular 19 and Tailwind
 - ⚙️ **Settings Management**: Comprehensive settings interface with tabs
 - 🎯 **Component-Based Architecture**: Modular and reusable components
 - 🛠️ **Built with Latest Technologies**: Angular 19, Tailwind CSS 4, TypeScript 5
+- 🔔 **Toast Notifications**: Integrated @ngneat/toast for beautiful notifications
+- 🎨 **Tailwind CSS**: Modern utility-first CSS framework
+- 📦 **Production Ready**: Optimized for production builds
 
 ## 🚀 Getting Started
 
@@ -61,26 +68,29 @@ src/
 └── styles.css               # Global styles
 ```
 
-## 🧩 Components
+## 🧩 Key Components
 
 ### 📊 Dashboard
-
-The dashboard provides an overview of key metrics with:
 - Stats cards showing important data
 - Charts for data visualization
 - Recent activity tables
 
 ### ⚙️ Settings
-
-A comprehensive settings interface with:
 - Profile management
 - Security settings
 - Notification preferences
 - User preferences
 - Help and support
 
-### 🧭 Navigation
+### 🔔 Toast Notifications
+Integrated @ngneat/toast for beautiful, customizable notifications:
+- Success messages
+- Error alerts
+- Warning notifications
+- Info messages
+- Custom styling support
 
+### 🧭 Navigation
 - Collapsible sidebar for efficient space usage
 - Responsive header with user profile
 - Intuitive navigation between sections
@@ -89,6 +99,7 @@ A comprehensive settings interface with:
 
 - **Angular 19**: Latest version of the Angular framework
 - **Tailwind CSS 4**: Utility-first CSS framework
+- **@ngneat/toast**: Beautiful toast notifications
 - **Lucide Icons**: Beautiful, consistent icons
 - **TypeScript**: Type-safe JavaScript
 - **RxJS**: Reactive programming library
@@ -113,4 +124,4 @@ For support, email deepakchettri877@gmail.com or open an issue in the GitHub rep
 
 ---
 
-Made with ❤️ by Deepak Chettri 
+Made with ❤️ by Deepak Chettri
