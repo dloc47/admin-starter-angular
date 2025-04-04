@@ -1,0 +1,144 @@
+<!-- Dashboard Component -->
+<div class="p-4">
+  <h2 class="text-2xl font-semibold mb-6">Dashboard</h2>
+  
+  <!-- Stats Cards Row -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    <!-- Total Sales Card -->
+    <div class="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-sm text-gray-500 mb-1">Total Sales</p>
+          <h3 class="text-2xl font-bold text-gray-800">$24,500</h3>
+          <p class="text-xs text-green-500 mt-1">+15% from last month</p>
+        </div>
+        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center">
+          <lucide-icon [name]="DollarSign" class="w-6 h-6 text-blue-500"></lucide-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Users Card -->
+    <div class="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-sm text-gray-500 mb-1">Total Users</p>
+          <h3 class="text-2xl font-bold text-gray-800">1,250</h3>
+          <p class="text-xs text-green-500 mt-1">+8% from last month</p>
+        </div>
+        <div class="w-12 h-12 bg-purple-50 rounded-full flex items-center justify-center">
+          <lucide-icon [name]="Users" class="w-6 h-6 text-purple-500"></lucide-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Orders Card -->
+    <div class="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-sm text-gray-500 mb-1">Total Orders</p>
+          <h3 class="text-2xl font-bold text-gray-800">850</h3>
+          <p class="text-xs text-green-500 mt-1">+12% from last month</p>
+        </div>
+        <div class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center">
+          <lucide-icon [name]="ShoppingCart" class="w-6 h-6 text-green-500"></lucide-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Revenue Card -->
+    <div class="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-sm text-gray-500 mb-1">Total Revenue</p>
+          <h3 class="text-2xl font-bold text-gray-800">$32,800</h3>
+          <p class="text-xs text-green-500 mt-1">+20% from last month</p>
+        </div>
+        <div class="w-12 h-12 bg-yellow-50 rounded-full flex items-center justify-center">
+          <lucide-icon [name]="TrendingUp" class="w-6 h-6 text-yellow-500"></lucide-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts Row -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+    <!-- Sales Chart -->
+    <div class="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Sales Overview</h3>
+        <div class="flex items-center space-x-2">
+          <button class="px-3 py-1 text-sm bg-blue-50 text-blue-600 rounded-md">Weekly</button>
+          <button class="px-3 py-1 text-sm text-gray-600 hover:bg-gray-50 rounded-md">Monthly</button>
+        </div>
+      </div>
+      <div class="h-64 bg-gray-50 rounded-lg flex items-center justify-center">
+        <p class="text-gray-500">Chart will be implemented here</p>
+      </div>
+    </div>
+
+    <!-- Revenue Chart -->
+    <div class="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Revenue Overview</h3>
+        <div class="flex items-center space-x-2">
+          <button class="px-3 py-1 text-sm bg-blue-50 text-blue-600 rounded-md">Weekly</button>
+          <button class="px-3 py-1 text-sm text-gray-600 hover:bg-gray-50 rounded-md">Monthly</button>
+        </div>
+      </div>
+      <div class="h-64 bg-gray-50 rounded-lg flex items-center justify-center">
+        <p class="text-gray-500">Chart will be implemented here</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recent Orders Table -->
+  <div class="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
+    <div class="flex items-center justify-between mb-4">
+      <h3 class="text-lg font-semibold text-gray-800">Recent Orders</h3>
+      <button class="text-sm text-blue-600 hover:text-blue-700">View All</button>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full">
+        <thead>
+          <tr class="text-left border-b border-gray-200">
+            <th class="pb-3 text-sm font-medium text-gray-500">Order ID</th>
+            <th class="pb-3 text-sm font-medium text-gray-500">Customer</th>
+            <th class="pb-3 text-sm font-medium text-gray-500">Product</th>
+            <th class="pb-3 text-sm font-medium text-gray-500">Amount</th>
+            <th class="pb-3 text-sm font-medium text-gray-500">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="py-3 text-sm text-gray-600">#ORD-001</td>
+            <td class="py-3 text-sm text-gray-600">John Doe</td>
+            <td class="py-3 text-sm text-gray-600">Product A</td>
+            <td class="py-3 text-sm text-gray-600">$120.00</td>
+            <td class="py-3">
+              <span class="px-2 py-1 text-xs font-medium text-green-700 bg-green-50 rounded-full">Completed</span>
+            </td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="py-3 text-sm text-gray-600">#ORD-002</td>
+            <td class="py-3 text-sm text-gray-600">Jane Smith</td>
+            <td class="py-3 text-sm text-gray-600">Product B</td>
+            <td class="py-3 text-sm text-gray-600">$85.00</td>
+            <td class="py-3">
+              <span class="px-2 py-1 text-xs font-medium text-yellow-700 bg-yellow-50 rounded-full">Pending</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 text-sm text-gray-600">#ORD-003</td>
+            <td class="py-3 text-sm text-gray-600">Bob Johnson</td>
+            <td class="py-3 text-sm text-gray-600">Product C</td>
+            <td class="py-3 text-sm text-gray-600">$250.00</td>
+            <td class="py-3">
+              <span class="px-2 py-1 text-xs font-medium text-blue-700 bg-blue-50 rounded-full">Processing</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
